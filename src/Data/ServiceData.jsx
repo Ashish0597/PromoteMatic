@@ -39,12 +39,12 @@ export const services = [
         speed: "normal",
         link: "single_services",
     },
-    {
-        id: 6,
-        icon: "/assets/images/service07.png",
-        title: "Web Development",
-        content: "Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.",
-        speed: "fast",
-        link: "single_services",
-    },
+   {
+    id: 6,
+    icon: "/assets/images/service07.png",
+    title: "Web Development",
+    content: "Custom websites, business portals, landing pages and high-performance web solutions tailored for growth.",
+    speed: "fast",
+    link: "/web-development",
+},
 ];

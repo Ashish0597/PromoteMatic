@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 
 const ServiceCard = ({icon, title, content, link, speed = ""}) => {
@@ -19,14 +20,14 @@ const ServiceCard = ({icon, title, content, link, speed = ""}) => {
                         </div>
                     </div>
                     <p>{content}</p>
-                    <a href={link} className="btn btn-accent">
+                    <NavLink to={link} className="btn btn-accent">
                         <div className="btn-title">
                             <span>View Details</span>
                         </div>
                         <div className="icon-circle">
                             <i className="fa-solid fa-arrow-right"></i>
                         </div>
-                    </a>
+                    </NavLink>
                 </div>
             </AnimateOnScroll>
         </>

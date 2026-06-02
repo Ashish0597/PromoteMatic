@@ -86,15 +86,24 @@ function Navbar() {
                                     </a>
 
                                     <ul className="dropdown-menu">
-                                        <li>
-                                            <NavLink
-                                                to="/service"
-                                                className="dropdown-item"
-                                            >
-                                                Service
-                                            </NavLink>
-                                        </li>
-                                    </ul>
+                                     <li>
+                                         <NavLink
+                                             to="/service"
+                                             className="dropdown-item"
+                                         >
+                                             All Services
+                                         </NavLink>
+                                     </li>
+                                 
+                                     <li>
+                                         <NavLink
+                                             to="/web-development"
+                                             className="dropdown-item"
+                                         >
+                                             Web Development
+                                         </NavLink>
+                                     </li>
+                                 </ul>
                                 </li>
 
                                 <li className="nav-item">
@@ -117,9 +126,9 @@ function Navbar() {
                 </nav>
             </div>
 
-           <a href="/contact" className="contact-ribbon">
+           <NavLink to="/contact" className="contact-ribbon">
     Contact Us
-</a>
+</NavLink>
 
 {showTop && (
     <button
