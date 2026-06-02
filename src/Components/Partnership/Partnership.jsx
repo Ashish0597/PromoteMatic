@@ -1,66 +1,78 @@
 import React from "react";
 import { partnerships } from "../../Data/PartnershipData";
-import useAnimateOnScroll from "../Hooks/useAnimateOnScroll";
+import AnimateOnScroll from "../Hooks/AnimateOnScroll";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; // Autoplay module import karna mat bhulna
 import "swiper/css";
 
 const PartnershipSection = () => {
-    useAnimateOnScroll();
 
     return (
         <div className="section-partner">
             <div className="hero-container">
-                <div className="card card-partner animate-box animated animate__animated" data-animate="animate__fadeInRight">
-                <div className="partner-spacer"></div>
+                <AnimateOnScroll animation="fadeInRight" speed="normal">
+                    <div className="card card-partner">
+                        <div className="partner-spacer"></div>
 
-                <div className="row row-cols-lg-2 row-cols-1 align-items-center px-5 position-relative z-2">
-                    <div className="col">
-                        <div className="d-flex flex-column justify-content-start pe-lg-3 pe-0">
-                            <h3 className="title-heading">Powering Success for Top Brands</h3>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="d-flex flex-column ps-lg-3 ps-0">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ligula, varius at rutrum et, finibus sed felis. 
-                                Quisque eget tincidunt lectus. Sed quis diam sed neque mattis feugiat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="swiperPartner-layout">
-                    <div className="swiperPartner-overlay">
-                        <div className="spacer"></div>
-                    </div>
-
-                    <div className="swiperPartner-container">
-                        <Swiper
-                            slidesPerView={6}
-                            spaceBetween={20}
-                            loop={true}
-                            autoplay={{
-                                delay: 5000,
-                                disableOnInteraction: false,
-                            }}
-                            breakpoints={{
-                            230: { slidesPerView: 3 },
-                            767: { slidesPerView: 4 },
-                            1024: { slidesPerView: 6 },
-                            }}
-                            className="swiperPartner"
-                        >
-                            {partnerships.concat(partnerships).map((partner) => (
-                            <SwiperSlide key={partner.id + Math.random()}>
-                                <div className="partner-slide">
-                                    <img src={partner.logo} alt="Client" className="partner-logo img-fluid" />
+                        <div className="row row-cols-lg-2 row-cols-1 align-items-center px-5 position-relative z-2">
+                            <div className="col">
+                                <div className="d-flex flex-column justify-content-start pe-lg-3 pe-0">
+                                    <h3 className="title-heading">Powering Success for Top Brands</h3>
                                 </div>
-                            </SwiperSlide>
-                            ))}
-                        </Swiper>   
+                            </div>
+                            <div className="col">
+                                <div className="d-flex flex-column ps-lg-3 ps-0">
+                                    {/* Lorem ipsum ko niche diye gaye text se badal diya hai */}
+                                    <p>
+                                        At Promotematic, we collaborate with industry leaders to transform 
+                                        bold ideas into scalable digital realities. Our data-driven 
+                                        strategies and precision execution ensure your brand stays 
+                                        ahead in a competitive digital landscape.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="swiperPartner-layout">
+                            <div className="swiperPartner-overlay">
+                                <div className="spacer"></div>
+                            </div>
+
+                            <div className="swiperPartner-container">
+                                <Swiper
+                                    modules={[Autoplay]} // Autoplay activate karne ke liye
+                                    slidesPerView={6}
+                                    spaceBetween={20}
+                                    loop={true}
+                                    autoplay={{
+                                        delay: 3000,
+                                        disableOnInteraction: false,
+                                    }}
+                                    breakpoints={{
+                                        230: { slidesPerView: 3 },
+                                        767: { slidesPerView: 4 },
+                                        1024: { slidesPerView: 6 },
+                                    }}
+                                    className="swiperPartner"
+                                >
+                                    {/* Partnership logos mapping */}
+                                    {partnerships.concat(partnerships).map((partner, index) => (
+                                        <SwiperSlide key={`${partner.id}-${index}`}>
+                                            <div className="partner-slide">
+                                                <img 
+                                                    src={partner.logo} 
+                                                    alt="Promotematic Partner" 
+                                                    className="partner-logo img-fluid" 
+                                                    style={{ filter: 'grayscale(100%)', opacity: 0.7 }} // Optional: Professional look ke liye
+                                                />
+                                            </div>
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>   
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
+                </AnimateOnScroll>
             </div>
         </div>
     );

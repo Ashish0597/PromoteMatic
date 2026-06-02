@@ -1,8 +1,3 @@
-/* ======================================================================== */
-/* Marko HTML5 Template */
-/* ======================================================================== */
-
-/* ================== Table Of Content ================== */
 
 /*
 01. Import Vendor
@@ -80,22 +75,23 @@
     --primary: #D1D1D1;
     --secondary: #040404;
     --text-color: #8B8B8B;
-    --accent-color: #C82AEF; 
+    --accent-color: #7ebb42; 
     --accent-color-2: #FFFFFF;
     --accent-color-3: #1F1F1F;
     --accent-color-4: #0E0E0E;
     --accent-color-5: #0404047D;
-    --accent-color-6: #C82AEF85;
+    --accent-color-6: #7ebb42;
     --accent-color-7: #FFFFFF8C;
     --star-color: #EFBC2A;
     --error-color: #e63946;
     --accent-transparent: #00000000;
     --accent-transparent-2: #00000073;
     --accent-transparent-3: rgba(255, 255, 255, 0.041);
-    --box-shadow-top-left: -3px -3px 7px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
-    --box-shadow-bottom-right: 3px 3px 7px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
-    --box-shadow-top-left-wide: -3px -3px 10px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
-    --box-shadow-bottom-right-wide: 3px 3px 10px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
+    --box-shadow-top-left: -3px -3px 7px 0px rgba(126, 187, 66, 0.44);
+    --box-shadow-bottom-right: 3px 3px 7px 0px rgba(126, 187, 66, 0.44);
+    
+    --box-shadow-top-left-wide: -3px -3px 10px 0px rgba(126, 187, 66, 0.44);
+    --box-shadow-bottom-right-wide: 3px 3px 10px 0px rgba(126, 187, 66, 0.44);
     --global-font: "Plus Jakarta Sans", sans-serif;
     --global-border-radius: 25px 25px 25px 25px;
     --animation-normal: 1.25s;
@@ -148,12 +144,12 @@
     --primary: #1F1F1F;
     --secondary: #FFFAFA;
     --text-color: #4A4A4A;
-    --accent-color: #C82AEF;
+    --accent-color: #7ebb42;
     --accent-color-2: #000000;
     --accent-color-3: #e3caff; 
     --accent-color-4: #f5f5f5;
     --accent-color-5: #FFFFFF7D;
-    --accent-color-6: #C82AEF33;
+    --accent-color-6: #688c44;
     --accent-color-7: #FFFFFF8C;
     --star-color: #EFBC2A;
     --error-color: #E63946;
@@ -261,12 +257,12 @@ body.lightmode .keep-dark {
     --primary: #D1D1D1;
     --secondary: #040404;
     --text-color: #8B8B8B;
-    --accent-color: #C82AEF; 
+    --accent-color: #7ebb42; 
     --accent-color-2: #FFFFFF;
     --accent-color-3: #1F1F1F;
     --accent-color-4: #0E0E0E;
     --accent-color-5: #0404047D;
-    --accent-color-6: #C82AEF85;
+    --accent-color-6: #516a38;
     --accent-color-7: #FFFFFF8C;
     --star-color: #EFBC2A;
     --error-color: #e63946;
@@ -1084,11 +1080,14 @@ body.lightmode .keep-dark .btn-accent{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 150vw;
+    height: 150vh;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 0;
+    overflow: hidden;
     pointer-events: none;
-    width: 100%;
-    height: 100%;
 }
-
 
 .banner-video-content{
     display: flex;
@@ -1945,6 +1944,11 @@ body.lightmode .navbar-icon-wrapper{
     box-shadow: var(--box-shadow-bottom-right);
 }
 
+.card-about .counter-wrapper {
+    display: inline-flex;
+    align-items: center; /* Pastikan alignment di wrapper */
+}
+
 .card-about .counter{
     font-size: var(--font-size-15xl);
     line-height: var(--line-height-normal);
@@ -2032,6 +2036,11 @@ body.lightmode .navbar-icon-wrapper{
 
 .card-expertise:hover{
     box-shadow: var(--box-shadow-bottom-right);
+}
+
+.card-expertise .counter-wrapper {
+    display: inline-flex;
+    align-items: center; /* Pastikan alignment di wrapper */
 }
 
 .card-expertise .counter{
@@ -2504,21 +2513,21 @@ body.lightmode .case-studies-content::before{
 }
 
 .case-studies-content.local-business{
-    background-image: url('/assets/images/collaborative-process-of-multicultural-skilled-peo-ALTECKG.jpg');
+    background-image: url('/assets/images/dummy-img01.png');
     width: 56.2%;
 }
 
 .case-studies-content.saas-leads{
-    background-image: url('/assets/images/collaborative-process-of-multicultural-skilled-peo-LELW4NP.jpg');
+    background-image: url('/assets/images/dummy-img02.png');
     width: 42%;
 }
 
 .case-studies-content.ecommerce{
-    background-image: url('/assets/images/collaborative-process-of-multicultural-skilled-peo-LY58K9U-1024x683.jpg');
+    background-image: url('/assets/images/dummy-img03.png');
     width: 42%;
 }
 .case-studies-content.startup-branding{
-    background-image: url('/assets/images/collaborative-process-of-multicultural-skilled-peo-YK9CA3B.jpg');
+    background-image: url('/assets/images/dummy-img04.png');
     width: 56.2%;
 }
 
@@ -3054,7 +3063,7 @@ body.lightmode .card-blog{
 /* ================== 35. Guide Components ================== */
 
 .guide-banner{
-    background-image: url('/assets/images/collaborative-process-of-multicultural-skilled-peo-AN9FZBQ-1024x683.jpg');
+    background-image: url('/assets/images/dummy-img01.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3756,7 +3765,7 @@ body.lightmode .newsletter-layout{
 }
 
 .chooseus-icon img{
-    width: 60%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -4157,7 +4166,7 @@ body.lightmode .accordion-button:not(.collapsed)::after{
 /* ================== 53. CTA Service Banner Components ================== */
 
 .cta-service-banner{
-    background-image: url('/assets/images/collaborative-process-of-multicultural-skilled-peo-AN9FZBQ-1024x683.jpg');
+    background-image: url('/assets/images/dummy-img-1920x900.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -4205,16 +4214,19 @@ body.lightmode .cta-service-banner::before{
     opacity: 0;
 }
 
-.animated{
-    animation-duration: var(--animation-normal);
+.animate__animated {
+    animation-duration: 1.25s;
+    animation-duration: var(--animation-normal, 1.25s);
 }
 
-.animated.fast{
-    animation-duration: var(--animation-fast);
+.animate__animated.animate__fast {
+    animation-duration: 0.75s;
+    animation-duration: var(--animation-fast, 0.75s);
 }
 
-.animated.slow{
-    animation-duration: var(--animation-slow);
+.animate__animated.animate__slow {
+    animation-duration: 2s;
+    animation-duration: var(--animation-slow, 2s);
 }
 
 /* ================== 55. CustomText Container Components ================== */
@@ -4382,4 +4394,79 @@ body.lightmode .cta-service-banner::before{
     align-self: center;
     background-color: transparent;
     background-image: radial-gradient(at center center, var(--accent-color-6) 0%, var(--accent-transparent) 70%);
+}
+
+/*  */
+
+.back-to-top{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #7EBB42;
+    color: #fff;
+    cursor: pointer;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(126,187,66,.4);
+    transition: all .3s ease;
+}
+
+.back-to-top:hover{
+    transform: translateY(-5px);
+}
+
+
+/*  */
+
+.contact-ribbon{
+    position: fixed;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+
+    background: #7EBB42;
+    color: #fff;
+    text-decoration: none;
+
+    padding: 10px 25px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    border-radius: 10px 10px 0 0;
+    z-index: 99999;
+
+    transition: all .3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.contact-ribbon:hover{
+    background: #68913C;
+    color: #fff;
+}
+
+
+/*  */
+.plan-badge{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:30px;
+    background:rgba(126,187,66,.15);
+    color:#7EBB42;
+    font-weight:600;
+    border:1px solid rgba(126,187,66,.3);
+}
+
+.plan-badge.featured{
+    background:#7EBB42;
+    color:#000;
 }

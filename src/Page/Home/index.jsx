@@ -10,17 +10,17 @@ import CaseStudiesSection from "../../Components/CaseStudies/CaseStudies";
 import TestimonialSection from "../../Components/Testimonial/testimonial";
 import DigitalProcessSection from "../../Components/DigitalProcess/digitalstep";
 import PricingPlanSection from "../../Components/Pricing/Pricing";
-import PartnershipSection from "../../Components/Partnership/Partnership";
+// import PartnershipSection from "../../Components/Partnership/Partnership";
 import NewsletterSection from "../../Components/Form/Newsletter";
 import BlogSection from "../../Components/Blog/blog";
 
 function HomePage(){
     return(
         <>
-            <HeadTitle title="Home - Marko - Digital Marketing Agency" />
+            <HeadTitle title="Home - Promotematic - Digital Marketing Agency" />
             <BannerHomeSection />
             <ExpertiseSection />
-            <PartnershipSection />
+            {/* <PartnershipSection /> */}
             <ChooseUsSection />
             <GuideBannerSection />
             <ModalVideoSection />

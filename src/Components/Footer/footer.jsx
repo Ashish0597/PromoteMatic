@@ -11,12 +11,12 @@ const Footer = () => {
                             <div className="col col-lg-4">
                                 <div className="footer-logo-container">
                                     <div className="logo-container-footer">
-                                    <img src="/assets/images/marko-logo.png" alt="Logo" className="site-logo img-fluid" />
+                                    <img src="/assets/images/promote-logo-v2.png" alt="Logo" className="site-logo img-fluid" />
                                     </div>
                                     <h4>Driving Digital Growth with Innovation & Strategy</h4>
                                     <p>
-                                    Lorem ipsum dolor si consectetur adipiscing elit ut elit tellus luctus nec ullamcorper mattis pulvinar dapibus leo.
-                                    </p>
+                                     We empower ambitious brands with strategic marketing, innovative design, and performance-driven execution. Our mission is simple — build scalable digital systems that generate consistent growth and long-term impact.
+                                                                         </p>
                                 </div>
                             </div>
 
@@ -27,8 +27,6 @@ const Footer = () => {
                                         <li><a href="/">Home</a></li>
                                         <li><a href="/about">About Us</a></li>
                                         <li><a href="/service">Service</a></li>
-                                        <li><a href="/case_studies">Case Studies</a></li>
-                                        <li><a href="/blog">Blog</a></li>
                                         <li><a href="/contact">Contact Us</a></li>
                                     </ul>
                                 </div>
@@ -39,11 +37,11 @@ const Footer = () => {
                                     <h5>Services</h5>
                                     <ul className="footer-list">
                                         <li><a href="/single_services">Social Media Marketing</a></li>
-                                        <li><a href="/single_services">SEO Optimization</a></li>
-                                        <li><a href="/single_services">PPC Advertising</a></li>
-                                        <li><a href="/single_services">Content Marketing</a></li>
-                                        <li><a href="/single_services">Branding Strategy</a></li>
-                                        <li><a href="/single_services">Email Marketing</a></li>
+                                        <li><a href="/single_services">Web App Development</a></li>
+                                        <li><a href="/single_services">Graphic Design</a></li>
+                                        <li><a href="/single_services">Video Editing</a></li>
+                                        <li><a href="/single_services">Animation</a></li>
+                                        <li><a href="/single_services">CGI Ad.</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -52,30 +50,30 @@ const Footer = () => {
                                 <div className="footer-contact-container">
                                     <h5>Contact Info</h5>
                                     <ul className="contact-list">
-                                        <li>hello@markoagency.com</li>
-                                        <li>+1 234 567 890</li>
-                                        <li>123 Digital Street, New York, USA</li>
+                                        <li>promotematic19@gmail.com</li>
+                                        <li>+91-9651938890</li>
+                                        <li>South Extension I, New Delhi, India</li>
                                     </ul>
                                     <div className="d-flex flex-column gspace-1">
                                         <h5>Social Media</h5>
                                         <div className="social-container">
                                             <div className="social-item-wrapper">
-                                                <a href="https://facebook.com" className="social-item">
+                                                <a href="https://www.facebook.com/profile.php?id=61578086674016" className="social-item">
                                                     <i className="fa-brands fa-facebook"></i>
                                                 </a>
                                             </div>
-                                            <div className="social-item-wrapper">
+                                            {/* <div className="social-item-wrapper">
                                                 <a href="https://youtube.com" className="social-item">
                                                     <i className="fa-brands fa-youtube"></i>
                                                 </a>
-                                            </div>
+                                            </div> */}
                                             <div className="social-item-wrapper">
-                                                <a href="https://instagram.com" className="social-item">
+                                                <a href="https://www.instagram.com/promotematic?igsh=MW1xZWZ4ZjU1dHN6YQ==" className="social-item">
                                                     <i className="fa-brands fa-instagram"></i>
                                                 </a>
                                             </div>
                                             <div className="social-item-wrapper">
-                                                <a href="https://linkedin.com" className="social-item">
+                                                <a href="https://www.linkedin.com/in/promote-matic-4b5140379/" className="social-item">
                                                     <i className="fa-brands fa-linkedin"></i>
                                                 </a>
                                             </div>
@@ -89,7 +87,7 @@ const Footer = () => {
                     </div>
 
                     <div className="copyright-container">
-                        <span className="copyright">© 2025 Marko. Fox Creation All Rights Reserved.</span>
+                        <span className="copyright">© 2025 Promotematic. Fox Creation All Rights Reserved.</span>
                         <div className="d-flex flex-row gspace-2">
                             <a href="#" className="legal-link">Terms of Service</a>
                             <a href="#" className="legal-link">Privacy Policy</a>

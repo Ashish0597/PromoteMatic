@@ -1,7 +1,7 @@
 export const services = [
     {
         id: 1,
-        icon: "/assets/images/Icon-7.png",
+        icon: "/assets/images/service01.png",
         title: "Social Media Marketing",
         content: "Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.",
         speed: "slow",
@@ -9,15 +9,15 @@ export const services = [
     },
     {
         id: 2,
-        icon: "/assets/images/digital-marketing-icons-F4LJ4W8.png",
+        icon: "/assets/images/service02.png",
         title: "Content Marketing",
         content: "Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.",
-        speed: "",
+        speed: "normal",
         link: "single_services",
     },
     {
         id: 3,
-        icon: "/assets/images/Icon-8.png",
+        icon: "/assets/images/service03.png",
         title: "PPC Advertising",
         content: "Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.",
         speed: "fast",
@@ -25,7 +25,7 @@ export const services = [
     },
     {
         id: 4,
-        icon: "/assets/images/Icon-5.png",
+        icon: "/assets/images/service04.png",
         title: "Email Marketing",
         content: "Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.",
         speed: "slow",
@@ -33,15 +33,15 @@ export const services = [
     },
     {
         id: 5,
-        icon: "/assets/images/Icon-6.png",
+        icon: "/assets/images/service05.png",
         title: "Branding & Design",
         content: "Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.",
-        speed: "",
+        speed: "normal",
         link: "single_services",
     },
     {
         id: 6,
-        icon: "/assets/images/Icon-4.png",
+        icon: "/assets/images/service07.png",
         title: "Web Development",
         content: "Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.",
         speed: "fast",
